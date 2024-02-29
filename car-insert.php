@@ -11,6 +11,7 @@
     if($res)
     {
         echo "inserted";
+        echo "insetred syccesfully";
     }
     else{
         echo "not inserted";
