@@ -4,25 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cars</title>
+    <style>
+        body{
+            background-image: url("car.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background{
+            margin-top: 15%;
+            margin-left: 43%;
+        }
+        label{
+            color: azure;
+        }
+    </style>
 </head>
 <body>
     <title>
         Car Module
     </title>
-    <form action="car-insert.php" method="post">
-        <label for="car_name">Car Name:</label>
-        <input type="text" name="car_name" ><br>
-        <label for="car_no">Car Number:</label>
-        <input type="number" name="car_no" ><br>
-        <label for="car_price">Car Price:</label>
-        <input type="number" name="car_price" ><br>
-        <label for="car_type">Car type:</label>
-        <select name="car_type">
-            <option value="sports">sports</option>
-            <option value="luxury">luxury</option>
-        </select>
-        <br><br>
-        <input type="submit" value="submit">
-    </form>
+    <div class="background">
+        <form action="car-insert.php" method="post">
+            <label for="car_name">Car Name:</label>
+            <input type="text" name="car_name" ><br><p></p>
+            <label for="car_no">Car Number:</label>
+            <input type="number" name="car_no" ><br><p></p>
+            <label for="car_price">Car Price:</label>
+            <input type="number" name="car_price" ><br><p></p>
+            <label for="car_type">Car type:</label>
+            <select name="car_type">
+                <option value="sports">sports</option>
+                <option value="luxury">luxury</option>
+            </select>
+            <br><br><p></p>
+            <input type="submit" value="submit">
+        </form>
+    </div>
+    
 </body>
 </html>
